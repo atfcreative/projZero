@@ -947,7 +947,6 @@ Gallery
 }
 
 .gallery img {
-  width: 80px;
   padding: 25px;
   filter: drop-shadow(2px 2px 3px grey);
   transition: color 1.5s ease-in-out;
@@ -958,44 +957,24 @@ Gallery
   opacity: .85;
 }
 
+/*.gallery img:first-of-type {
+  padding-left: 0;
+}*/
+
+/*.gallery img:last-of-type {
+  padding-right: 0;
+}*/
+
 /* image caraousel stuuff
   ==============================*/
-  /* Slideshow container */
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
@@ -1020,7 +999,6 @@ Gallery
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -1030,7 +1008,7 @@ Gallery
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active {
   background-color: #717171;
 }
 
@@ -1043,13 +1021,52 @@ Gallery
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/** Lightbox stuff **/
+.thumbnail {
+  max-width: 40%;
+}
+
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+  /** Unhide lightbox **/
+  display: block;
 }
 
 
