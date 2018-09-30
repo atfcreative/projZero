@@ -1,4 +1,20 @@
-// console.log('jello');
+// Smooth scroll stuff
+    $('.sidebar a').on('click', function(e) {
+      // prevent the standard link operation on click
+      e.preventDefault();
+      // use the href of the link to identify what
+      // section to scroll to
+      var thisTarget = $(this).attr('href');
+      // get that section's top offset
+      var targetOffset = $(thisTarget).offset().top;
+      // use jQuery.animate() to animate the body's
+      // scrollTop to the targetOffest
+      $('body').animate({
+        scrollTop: targetOffset
+      }, 600);
+    });
+
+
 //Global vars
 var menuButton = document.querySelector('i');
 //menu click event listener
@@ -106,39 +122,8 @@ function pageSlideR() {
 
 })();
 
-//=====REQUEST MAGIC SEAWEED API ====
-// http://magicseaweed.com/api/YOURAPIKEY/forecast/?spot_id=10
 
-// var gifSearch = $('.gif-input').val();
-//         var mswUrl = "http://magicseaweed.com/api/";
-//         var apiKey = " ";
-//         var completeUrl = `${mswUrl}${apiKey}forecast/?spot_id=255`;
-//         console.log(mswUrl);
-//         console.log(completeUrl);
 
-// $.ajax({
-//     method: 'GET';
-//     url: completeUrl,
-//     success: handleSuccess,
-//     error: handleError,
-// })
-
-// function handleSuccess (e) {
-//     function handleSuccess(response) {
-//     for (let i = 0; i < response.length; i++) {
-//         $('#user-data').append(`<p>${response[i].name}<br />${response[i].phone}</p>`);
-//     }
-
-//     response.forEach(function (user) {
-//       $('.container').append(`${response}`);
-//         })
-
-//     }
-// }
-
-// function handleError (error) {
-//     console.error(error);
-// }
 
 
 
