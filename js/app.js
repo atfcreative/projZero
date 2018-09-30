@@ -1,18 +1,43 @@
-// Smooth scroll stuff
-    $('.sidebar a').on('click', function(e) {
-      // prevent the standard link operation on click
-      e.preventDefault();
-      // use the href of the link to identify what
-      // section to scroll to
-      var thisTarget = $(this).attr('href');
-      // get that section's top offset
-      var targetOffset = $(thisTarget).offset().top;
-      // use jQuery.animate() to animate the body's
-      // scrollTop to the targetOffest
-      $('body').animate({
-        scrollTop: targetOffset
-      }, 600);
-    });
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+// // Smooth scroll stuff
+//     $('.sidebar a').on('click', function(e) {
+//       // prevent the standard link operation on click
+//       e.preventDefault();
+//       // use the href of the link to identify what
+//       // section to scroll to
+//       var thisTarget = $(this).attr('href');
+//       // get that section's top offset
+//       var targetOffset = $(thisTarget).offset().top;
+//       // use jQuery.animate() to animate the body's
+//       // scrollTop to the targetOffest
+//       $('body').animate({
+//         scrollTop: targetOffset
+//       }, 600);
+//     });
 
 
 //Global vars

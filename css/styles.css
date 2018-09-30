@@ -536,6 +536,18 @@ section {
     background-position: right;
 }
 
+.mahi {
+    background-image: url("../images/mahi.gif");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.rooster {
+    background-image: url("../images/rooster.gif");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .blue {
     background-color: #4bb5e9;
 }
