@@ -884,7 +884,7 @@ Error Styles
 }
 
 /* ----------------------------------------
-Media Queries
+media queries form elements
 ------------------------------------------- */
 @media only screen and (max-width: 790px) {
   nav a {
@@ -935,20 +935,18 @@ Gallery
 }
 
 .gallery img {
-  width: 100px;
+  width: 80px;
   padding: 25px;
+  filter: drop-shadow(2px 2px 3px grey);
+  transition: color 1.5s ease-in-out;
 }
 
-/*==========================
-media queries
-*/
+.gallery img:hover {
+  background-color:#EFCA46;
+  opacity: .85;
+}
 
-@media screen and (max-width: 780px) {
-    .gallery{
-        flex-direction: column;
-    }
-
-  /* image caraousel stuuff
+/* image caraousel stuuff
   ==============================*/
   /* Slideshow container */
 .slideshow-container {
