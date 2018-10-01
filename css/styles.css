@@ -364,34 +364,6 @@ hr {
   display: table;
   clear: both; }
 
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
-
-
-
 body {
     font-family: 'Owald', sans-serif;
     background-color: #fff;
@@ -410,26 +382,6 @@ header {
     position: relative;
     /*z-index: 100;*/
 }
-
-/*header a i {
-    display: inline-block;
-    color: #000;
-    font-size: 30px;
-    margin-right: 25px;
-    transition: color 1s ease-in-out;
-}
-
-header i {
-    padding-right: 20px;
-}
-
-header i:last-of-type {
-    margin-right:0;
-}
-
-header a i:hover {
-    color: #ccc;
-}*/
 
 .media {
     display: block;
@@ -496,8 +448,6 @@ nav a:hover {
     display: none;
 }
 
-
-
 .sample_pallette {
     background-color: #fe5f64; /*RED*/
     background-color: #4cd6bc; /*TURQ*/
@@ -513,8 +463,17 @@ section {
     padding: 100px 50px ;
 }
 
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer p {
+  text-transform: uppercase;
+}
+
 .row {
-    padding: 12em 2em;
+    padding: 5em 2em 10em 2em;
 }
 
 .red {
@@ -564,10 +523,6 @@ section {
     background-color: #EFCA46;
 }
 
-
-
-
-
 .right {
     float: right;
 }
@@ -591,6 +546,18 @@ h3 {
 
 .hero {
     width: 50%;
+}
+
+.quotes {
+  background-color: rgba(255,255,255, .85);
+  padding: 25px 40px;
+  border-radius: 15px;
+  filter: drop-shadow(3px 4px 4px black);
+}
+
+.light {
+  font-size: 75%;
+  font-weight: 300;
 }
 
 /*==========================
@@ -711,16 +678,27 @@ Swipe page right to left
 }
 
 .button {
-    border: 4px solid #fff;
+    border: 3px solid #fff;
     border-radius: 60px;
     padding: 25px 80px;
     line-height: 10px;
     transition: color 2s ease-in;
+    text-transform: uppercase;
+    font-size: 110%;
+    color: #fff;
+    transition: color 1s ease-in-out;
+
 }
 
 .button:hover {
-    background-color: #fff;
+    border: 3px solid #000;
 }
+
+/*.button a {
+  text-transform: uppercase;
+  font-size: 125%;
+  color: #fff;
+}*/
 
 /* ===========================
 FORM STUFF 
@@ -787,10 +765,10 @@ button {
   letter-spacing: 1.2px;
   letter-spacing: .08rem;
   transition: all .3s ease-in-out;
+  line-height: 25px;
 }
 
 button:hover {
-  background-color: #44545E;
   color: white;
   font-weight: 600;
 }
@@ -1053,6 +1031,24 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/* media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
 
 
 
