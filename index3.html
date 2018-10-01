@@ -18,6 +18,8 @@
         src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+  <!-- fancy box -->
+   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">     
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -61,31 +63,34 @@
 </main>
 <div class="row blue">
   <div class="gallery"><a name="gallery"></a>
-    <!-- Slider goes here -->
-  <img src="gallery/block_t.jpg" alt="thumbnail" />
-  <img src="gallery/btb_09_t.jpg" alt="thumbnail" />
-  <img src="gallery/clic_t.jpg" alt="thumbnail" />
-  <img src="gallery/collage_t.jpg" alt="thumbnail" />
-  <img src="gallery/crest_lg_t.gif" alt="thumbnail" />
-  <img src="gallery/dolphin_t.jpg" alt="thumbnail" />
-  <img src="gallery/euro_t.jpg" alt="thumbnail" />
-  <img src="gallery/fern-t.jpg" alt="thumbnail" />
-  <img src="gallery/flyer.jpg" alt="thumbnail" />
-  <img src="gallery/gmg_t.jpg" alt="thumbnail" />
-  <img src="gallery/hand_t.jpg" alt="thumbnail" />
-  <img src="gallery/j_t.jpg" alt="thumbnail" />
-  <img src="gallery/jg_t.jpg" alt="thumbnail" />
-  <img src="gallery/k_t.jpg" alt="thumbnail" />
-  <img src="gallery/lake_t.jpg" alt="thumbnail" />
-  <img src="gallery/lino_t.jpg" alt="thumbnail" />
-  <img src="gallery/nica_t.jpg" alt="thumbnail" />
-  <img src="gallery/nos_t.jpg" alt="thumbnail" />
-  <img src="gallery/ntree_t.jpg" alt="thumbnail" />
-  <img src="gallery/paint_t.jpg" alt="thumbnail" />
-  <img src="gallery/pan_dulce_t.jpg" alt="thumbnail" />
-  <!-- <img src="gallery/block_t.jpg" alt="thumbnail" />
-  <img src="gallery/block_t.jpg" alt="thumbnail" />
-  <img src="gallery/block_t.jpg" alt="thumbnail" /> -->
+
+    <!-- <img src="gallery/block_t.jpg" alt="thumbnail" />
+    <img src="gallery/btb_09_t.jpg" alt="thumbnail" />
+    <img src="gallery/clic_t.jpg" alt="thumbnail" />
+    <img src="gallery/collage_t.jpg" alt="thumbnail" />
+    <img src="gallery/crest_lg_t.gif" alt="thumbnail" /> -->
+
+
+    <a href="gallery/block.jpg" data-fancybox="gallery"><img src="gallery/block_t.jpg" alt="" /></a>
+    <a href="gallery/btb_09.jpg" data-fancybox="gallery"><img src="gallery/btb_09_t.jpg" alt="" /></a>
+    <a href="gallery/clic.jpg" data-fancybox="gallery"><img src="gallery/clic_t.jpg" alt="" /></a>
+    <a href="gallery/collage.jpg" data-fancybox="gallery"><img src="gallery/collage_t.jpg" alt="" /></a>
+    <a href="gallery/crest_lg.gif" data-fancybox="gallery"><img src="gallery/crest_lg_t.gif" alt="" /></a>
+    <a href="gallery/dolphin.jpg" data-fancybox="gallery"><img src="gallery/dolphin_t.jpg" alt="" /></a>
+    <a href="gallery/euro.jpg" data-fancybox="gallery"><img src="gallery/euro_t.jpg" alt="" /></a>
+    <a href="gallery/fern.jpg" data-fancybox="gallery"><img src="gallery/fern-t.jpg" alt="" /></a>
+    <a href="gallery/flyers.jpg" data-fancybox="gallery"><img src="gallery/flyers.jpg" alt="" /></a>
+    <a href="gallery/gmg.jpg" data-fancybox="gallery"><img src="gallery/gmg_t.jpg" alt="" /></a>
+    <a href="gallery/hands.jpg" data-fancybox="gallery"><img src="gallery/hand_t.jpg" alt="" /></a>
+    <a href="gallery/j.jpg" data-fancybox="gallery"><img src="gallery/j_t.jpg" alt="" /></a>
+    <a href="gallery/jg.jpg" data-fancybox="gallery"><img src="gallery/jg_t.jpg" alt="" /></a>
+    <a href="gallery/k.jpg" data-fancybox="gallery"><img src="gallery/k_t.jpg" alt="" /></a>
+    <a href="gallery/lake.jpg" data-fancybox="gallery"><img src="gallery/lake_t.jpg" alt="" /></a>
+    <a href="gallery/lino.jpg" data-fancybox="gallery"><img src="gallery/lino_t.jpg" alt="" /></a>
+    <a href="gallery/nica.jpg" data-fancybox="gallery"><img src="gallery/nica_t.jpg" alt="" /></a>
+    <a href="gallery/ntree1.jpg" data-fancybox="gallery"><img src="gallery/ntree_t.jpg" alt="" /></a>
+    <a href="gallery/painting.jpg" data-fancybox="gallery"><img src="gallery/paint_t.jpg" alt="" /></a>
+    <a href="gallery/pandulce.jpg" data-fancybox="gallery"><img src="gallery/pan_dulce_t.jpg" alt="" /></a>
   </div>
 
 </div>
@@ -121,15 +126,9 @@
   </div>
 
   <div class="row blue">
-    <!-- thumbnail image wrapped in a link -->
-        <a href="#img1">
-          <img src="http://insomnia.rest/images/screens/main.png" class="thumbnail">
-        </a>
+    
 
-        <!-- lightbox container hidden with CSS -->
-        <a href="#_" class="lightbox" id="img1">
-          <img src="http://insomnia.rest/images/screens/main.png">
-        </a>
+
   </div>
 
 
@@ -139,15 +138,15 @@
         <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="images/slide1.jpg" style="width:100%">
+  <a href="images/slide1_lg.jpg" data-fancybox="gallery2"><img src="images/slide1.jpg" alt="" style="width:100%"/></a>
 </div>
 
 <div class="mySlides fade">
-  <img src="images/slide2.jpg" style="width:100%">
+ <a href="images/slide2_lg.jpg" data-fancybox="gallery3"><img src="images/slide2.jpg" alt="" style="width:100%"/></a>
 </div>
 
 <div class="mySlides fade">
-  <img src="images/slide3.jpg" style="width:100%">
+  <a href="images/slide3_lg.jpg" data-fancybox="gallery4"><img src="images/slide3.jpg" alt="" style="width:100%"/></a>
 </div>
 
 </div>
@@ -181,7 +180,7 @@
 
 <script type="text/javascript" src="js/form.js"></script>
 <script type="text/javascript" src="js/slides.js"></script>
-
+<script src="js/jquery.fancybox.min.js"></script>
 <!-- custom app script -->
 <script type="text/javascript" src="js/app.js"></script>
 
