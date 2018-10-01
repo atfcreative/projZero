@@ -9,7 +9,9 @@ HTML, CSS, JavaScript, jQuery
 ===================================
 
 ####Show Psuedo Code=====>
+
 ![Psuedo code](images/snap3.jpg)
+
 
 
 
@@ -19,12 +21,16 @@ HTML, CSS, JavaScript, jQuery
 
 1. Research
 ![Inspiration](images/snap1.jpg)
+
 2. Decisons
 3. Wireframes
 ![Wireframes](images/snap4.jpg)
+
 ![Wireframes](images/snap5.jpg)
+
 4. Colors/Fonts
 ![Wireframes](images/snap2.jpg)
+
 5. Psuedo Code
 6. Code
 7. Fix Bugs
