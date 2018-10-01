@@ -8,28 +8,34 @@ HTML, CSS, JavaScript, jQuery
 
 ===================================
 
-####Show Psuedo Code=====> 
-	Snaps included below- here -->
- 	(link to psuedo...)
+####Show Psuedo Code=====>
+![Psuedo code](readme/snap3.jpg)
+
+
 
 ===================================
 
 ###Process/ Approach====>
 
 1. Research
+![Inspiration](readme/snap1.jpg)
 2. Decisons
 3. Wireframes
+![Wireframes](readme/snap4.jpg)
+![Wireframes](readme/snap5.jpg)
 4. Colors/Fonts
+![Wireframes](readme/snap2.jpg)
 5. Psuedo Code
-6. Code 
+6. Code
 7. Fix Bugs
+8. Respnsive check
 8. Media Queries
 
 
 ===================================
 
 ##Unsolved Problems====>
-* Issues with Navigation, presumably from zed-index inheritance. 
+* Issues with Navigation, presumably from zed-index inheritance.
 * Issues with connecting to API
 * Issues with responsiveness
 
@@ -60,17 +66,17 @@ function handleMenuClick () {
         menuButton.classList.remove('fa-times');
         menuButton.classList.add('fa-bars');
     }
-} 
+}
 ```
 
 ####Wins-
-> Met basic requirements. 
+> Met basic requirements.
 > Learned new things about interations, event listeners, DOM manipulation.
 > Got carried away with new animation/s abilities etc.
 
 ####Challenges ---
-> Thinking in a new "programattic" mindset. 
-> Need to focus on step by step. Strategize and implement. 
+> Thinking in a new "programattic" mindset.
+> Need to focus on step by step. Strategize and implement.
 > Need to focus on breaking the larger problem in to smaller pieces.
 
 
