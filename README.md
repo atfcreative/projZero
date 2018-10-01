@@ -9,7 +9,7 @@ HTML, CSS, JavaScript, jQuery
 ===================================
 
 ####Show Psuedo Code=====>
-![Psuedo code](readme/snap3.jpg)
+![Psuedo code](images/snap3.jpg)
 
 
 
@@ -18,13 +18,13 @@ HTML, CSS, JavaScript, jQuery
 ###Process/ Approach====>
 
 1. Research
-![Inspiration](readme/snap1.jpg)
+![Inspiration](images/snap1.jpg)
 2. Decisons
 3. Wireframes
-![Wireframes](readme/snap4.jpg)
-![Wireframes](readme/snap5.jpg)
+![Wireframes](images/snap4.jpg)
+![Wireframes](images/snap5.jpg)
 4. Colors/Fonts
-![Wireframes](readme/snap2.jpg)
+![Wireframes](images/snap2.jpg)
 5. Psuedo Code
 6. Code
 7. Fix Bugs
