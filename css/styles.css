@@ -1035,20 +1035,43 @@ img {vertical-align: middle;}
 /* media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
+/* mobile */
+@media (max-width: 450px) {nav {display: none;}
+.hero { width: 90%; padding: 0 10px;}
+.h1 { 
+  width: 100%; 
+  font-size: 75%; 
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  padding: 0px;
+  margin:0;
+}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+h1,h2, h3, p {
+  padding: 0 10px;
+}
+.row {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 
-/* Larger than tablet */
-@media (min-width: 750px) {}
+.button {
+  width: 100%;
+}
+.sidebar {
+  width:50%;
+}
+}
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (max-width: 580px) { nav {display: none;} 
+.hero { width: 100%;}
+.h1 { width: 90%; font-size: 85%; text-align: center; }
+}
 
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+
+
 
 
 
