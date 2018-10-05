@@ -1,16 +1,16 @@
-#*Project Zero-*
+# *-Project Zero-*
 
 atfcreative.com/proj_zero/
 
 ==================================
 
-#####Technologies used===>
+##### Technologies used===>
 
 HTML, CSS, JavaScript, jQuery
 
 ===================================
 
-####Show Psuedo Code=====>
+#### Show Psuedo Code=====>
 
 ![Psuedo code](images/snap3.jpg)
 
@@ -22,11 +22,11 @@ HTML, CSS, JavaScript, jQuery
 ###Process/ Approach====>
 
 1. Research
-![Inspiration](images/snap1.jpg)
+[Inspiration](images/snap1.jpg)
 
 2. Decisons
 3. Wireframes
-![Wireframes](images/snap4.jpg)
+[Wireframes](images/snap4.jpg)
 
 ![Wireframes](images/snap5.jpg)
 
